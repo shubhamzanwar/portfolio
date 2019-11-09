@@ -77,4 +77,22 @@ export default {
         display: flex;
         justify-content: space-around
     }
+
+    @media only screen and (max-width: 1000px) {
+        .projects-grid {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .projects-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+        .projects-grid {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
