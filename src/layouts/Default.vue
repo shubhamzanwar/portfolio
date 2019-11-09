@@ -30,6 +30,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    overflow: auto;
   }
 
   .header {
