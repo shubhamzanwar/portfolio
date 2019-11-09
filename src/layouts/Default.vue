@@ -24,32 +24,40 @@
 
   .layout {
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 32px solid black;
+    padding: 0 1.25rem;
+    border: 2rem solid black;
     height: 100vh;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    height: 28px;
-    margin-top: 14px;
+    margin-bottom: 1.25rem;
+    height: 1.75rem;
+    margin-top: 1rem;
   }
 
   .brand-btn {
     text-decoration: none;
-    font-size: 28px;
+    font-size: 1.75rem;
     color: black;
   }
 
   .nav__link {
-    margin-left: 20px;
     text-decoration: none;
+    font-size: 1.25rem;
     color: black;
+    margin-left: 1.25rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .layout {
+      border: none;
+    }
   }
 </style>
 
