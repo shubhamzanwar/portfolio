@@ -27,8 +27,8 @@ export default {
     bottom: 8rem;
     left: 6rem;
     background: #B0F3D7;
-    height: 24rem;
-    width: 35rem;
+    height: 50vh;
+    width: 40vw;
   }
 
   .name {
