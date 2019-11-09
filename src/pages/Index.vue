@@ -1,33 +1,55 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+    <div class="home-page">
+      <div class="name-block">
+      </div>
+      <div class="name">Shubham <br> Zanwar</div>
+    </div>
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Hello'
   }
 }
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
+<style scoped>
+  .home-page {
+    flex: 1;
+    position: relative;
+  }
+
+  .name-block {
+    position: absolute;
+    bottom: 8rem;
+    left: 6rem;
+    background: #B0F3D7;
+    height: 24rem;
+    width: 35rem;
+  }
+
+  .name {
+    position: absolute;
+    bottom: 8rem;
+    left: 7rem;
+    font-size: 5.6rem;
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .name-block {
+      bottom: 3rem;
+      left: 0;
+      height: 24rem;
+      width: 100%;
+    }
+    .name {
+      bottom: 3rem;
+      left: 1rem;
+      font-size: 4rem;
+    }
+  }
 </style>
