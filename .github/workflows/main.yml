@@ -21,8 +21,8 @@ jobs:
         git config --global user.email zanwar.shubham@gmail.com
     - name: clone repo
       run: |
-        node index.js
         yarn
+        node index.js
         yarn build
         git clone https://github.com/shubhamzanwar/shubhamzanwar.github.io
         mv -v ./dist/* ./shubhamzanwar.github.io
