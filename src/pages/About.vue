@@ -114,12 +114,35 @@ export default {
 
   @media only screen and (max-width: 768px) {
     .about-page{
-      flex-direction: column-reverse;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -moz-box-direction: reverse;
+      box-direction: reverse;
       padding: 0 0 1rem;
     }
     .content-container {
       margin-right: 0;
       margin-top: 2rem;
+    }
+    .content-heading {
+      font-size: 1.2rem;
+    }
+    .content-block {
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+    }
+    .content {
+      font-size: 0.75rem;
+      width: 100%;
+    }
+    .skills {
+      font-size: 0.5rem;
+      width: 18rem;
     }
   }
 
