@@ -36,7 +36,7 @@ export default {
         padding: 1rem;
         display: flex;
         flex-direction: column;
-        min-height: 150px;
+        min-height: 9.5rem;
     }
     .project-card:first-child,
     .project-card:last-child {

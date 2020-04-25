@@ -25,7 +25,7 @@ export default {
         margin: 0 2rem;
         display: flex;
         flex-direction: column;
-        min-height: 300px;
+        min-height: 18rem;
     }
     .blog-card:first-child,
     .blog-card:last-child {
@@ -33,7 +33,7 @@ export default {
     }
 
     .image {
-        height: 200px;
+        height: 12.5rem;
         background-position: center;
         background-size: 100%;
 
@@ -46,6 +46,10 @@ export default {
 
     .description {
         padding: 1rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .title {

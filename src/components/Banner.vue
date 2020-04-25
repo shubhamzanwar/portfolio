@@ -39,4 +39,14 @@ export default {
         font-weight: 500;
         font-size: 2.2rem;
     }
+
+    @media (max-width: 768px) {
+        .banner {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .text-section {
+            text-align: center;
+        }
+    }
 </style>
