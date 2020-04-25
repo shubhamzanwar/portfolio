@@ -40,6 +40,11 @@ export default {
         background-color: #d1ecf1;
         border-color: #bee5eb;
     }
+    .danger {
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+    }
 
     @media (max-width: 450px) {
         .base {
