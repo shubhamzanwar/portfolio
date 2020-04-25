@@ -33,4 +33,10 @@ export default {
         gap: 2rem;
         margin-top: 3rem;
     }
+
+    @media (max-width: 600px) {
+        .projects-grid {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
