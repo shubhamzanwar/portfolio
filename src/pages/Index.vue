@@ -5,6 +5,7 @@
       <intro-row />
       <divider />
       <home-info-alert />
+      <projects-display-row />
     </div>
   </Layout>
 </template>
@@ -14,6 +15,7 @@ import HomeBanner from "../components/Home/HomeBanner";
 import IntroRow from "../components/Home/IntroRow";
 import Divider from "../components/Divider";
 import HomeInfoAlert from "../components/Home/HomeInfoAlert";
+import ProjectsDisplayRow from "../components/Home/ProjectsDisplayRow";
 
 export default {
   metaInfo: {
@@ -23,7 +25,8 @@ export default {
     HomeBanner,
     IntroRow,
     Divider,
-    HomeInfoAlert
+    HomeInfoAlert,
+    ProjectsDisplayRow
   }
 }
 </script>
