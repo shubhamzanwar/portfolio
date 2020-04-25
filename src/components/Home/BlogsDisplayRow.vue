@@ -10,6 +10,7 @@
             :title="blog.title"
             :date="blog.date"
             :image="blog.image"
+            :link="blog.link"
         />
     </display-row>
 </template>

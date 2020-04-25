@@ -1,10 +1,12 @@
 <template>
     <div class="blog-card">
-        <div class="image" :style="{backgroundImage: `url(${image})`}"></div>
-        <div class="description">
-            <div class="title">{{title}}</div>
-            <div class="date">Published {{date}}</div>
-        </div>
+        <a :href="link" target="_blank">
+            <div class="image" :style="{backgroundImage: `url(${image})`}"></div>
+            <div class="description">
+                <div class="title">{{title}}</div>
+                <div class="date">Published {{date}}</div>
+            </div>
+        </a>
     </div>
 </template>
 
@@ -14,6 +16,7 @@ export default {
         image: String,
         title: String,
         date: String,
+        link: String,
     }
 }
 </script>
@@ -63,6 +66,11 @@ export default {
         font-size: 0.8rem;
         color: #999;
         font-style: italic;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {
