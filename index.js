@@ -1,5 +1,6 @@
 const axios = require('axios');
 const fs = require('fs');
+const {format} = require('date-fns');
 const args = process.argv.slice(2);
 const GITHUB_API_V4_TOKEN = args[0];
 const NUMBER_OF_REPOS = args[1];
@@ -65,16 +66,32 @@ parseRepo = (repo) => {
     }
 }
 
-axios({
-    url: 'https://api.github.com/graphql',
-    method: 'POST',
-    data: {query, variables},
-    headers: {
-        authorization: `bearer ${GITHUB_API_V4_TOKEN}`,
-        'Content-Type': 'application/json'
+const shouldIncludeBlog = (post) => {
+    return post.categories.length > 0;
+}
+
+const parseBlog = (blog) => {
+    return {
+        id: blog.guid,
+        title: blog.title,
+        link: blog.link,
+        date: format(new Date(blog.pubDate), 'dd MMM yyyy'),
+        image: blog.thumbnail,
+        categories: blog.categories,
     }
-}).then((data) => {
-    const repos = data.data.data.user.repositories.nodes;
+}
+
+const fetchRepos = async () => {
+    const {data} = await axios({
+        url: 'https://api.github.com/graphql',
+        method: 'POST',
+        data: {query, variables},
+        headers: {
+            authorization: `bearer ${GITHUB_API_V4_TOKEN}`,
+            'Content-Type': 'application/json'
+        }
+    });
+    const repos = data.data.user.repositories.nodes;
     const reposToStore = repos.reduce((acc, repo) => {
         if(shouldIncludeRepo(repo)){
             return [...acc, parseRepo(repo)];
@@ -82,4 +99,18 @@ axios({
         return acc;
     }, []);
     fs.writeFileSync('./src/constants/projects.json', JSON.stringify(reposToStore));
-});
+}
+
+const fetchPosts = async () => {
+    const {data} = await axios.get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zanwar.shubham');
+    if(data.status === "ok") {
+        const allPosts = data.items;
+        const blogs = allPosts.filter(shouldIncludeBlog);
+
+        const parsedBlogs = blogs.map(parseBlog);
+        fs.writeFileSync('./src/constants/blogs.json', JSON.stringify(parsedBlogs));
+    }
+}
+
+fetchRepos();
+fetchPosts();
