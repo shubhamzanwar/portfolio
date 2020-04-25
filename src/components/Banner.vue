@@ -49,4 +49,16 @@ export default {
             text-align: center;
         }
     }
+
+    @media (max-width: 600px) {
+        .banner-title {
+            font-size: 3.5rem;
+        }
+
+        .banner-sub-title {
+            color: #999;
+            font-weight: 500;
+            font-size: 1.7rem;
+        }
+    }
 </style>
