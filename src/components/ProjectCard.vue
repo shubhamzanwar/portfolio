@@ -1,5 +1,5 @@
 <template>
-    <div class="project-card">
+    <div class="project-card" :style="style">
         <div class="project-title">{{title}}</div>
         <div class="content-wrapper">
             <div class="project-description">{{description}}</div>
@@ -19,7 +19,11 @@ export default {
         showDetails: Boolean,
         starCount: Number,
         primaryLanguage: String,
-        languageColor: String
+        languageColor: String,
+        style: {
+            type: Object,
+            default: {}
+        }
     }
 }
 </script>
