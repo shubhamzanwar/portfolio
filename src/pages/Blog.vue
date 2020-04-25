@@ -1,7 +1,7 @@
 <template>
     <Layout>
         <div class="blog-page">
-            <projects-banner />
+            <blog-banner />
             <blog-alert />
             <projects-grid />
             <divider />
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import ProjectsBanner from "../components/Projects/ProjectsBanner";
+import BlogBanner from "../components/Blog/BlogBanner";
 import BlogAlert from "../components/Blog/BlogAlert";
 import ProjectsGrid from "../components/Projects/ProjectsGrid";
 import Divider from "../components/Divider";
@@ -21,7 +21,7 @@ export default {
         projects: Projects
     }),
     components: {
-        ProjectsBanner,
+        BlogBanner,
         BlogAlert,
         ProjectsGrid,
         Divider,
