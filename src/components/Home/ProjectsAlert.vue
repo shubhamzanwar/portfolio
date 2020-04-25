@@ -1,7 +1,7 @@
 <template>
     <alert type="warning">
         You can also find my skills and project work documented in my resume. 
-        <a href="" target="_blank">Download now</a>
+        <a href="/resume.pdf" target="_blank">Download now</a>
     </alert>
 </template>
 
