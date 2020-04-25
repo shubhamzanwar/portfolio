@@ -20,7 +20,7 @@ export default {
         text-align: center;
         border-radius: 10px;
     }
-    .info {
+    .primary {
         background: #CCE5FF;
         border: 1px solid #B8DAFF;
         color: #004085;
