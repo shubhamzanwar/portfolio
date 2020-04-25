@@ -1,8 +1,9 @@
 <template>
   <Layout>
     <div class="home-page">
-      <home-banner></home-banner>
-      <intro-row></intro-row>
+      <home-banner />
+      <intro-row />
+      <divider />
     </div>
   </Layout>
 </template>
@@ -10,6 +11,7 @@
 <script>
 import HomeBanner from "../components/Home/HomeBanner";
 import IntroRow from "../components/Home/IntroRow";
+import Divider from "../components/Divider";
 
 export default {
   metaInfo: {
@@ -17,7 +19,8 @@ export default {
   },
   components: {
     HomeBanner,
-    IntroRow
+    IntroRow,
+    Divider
   }
 }
 </script>
