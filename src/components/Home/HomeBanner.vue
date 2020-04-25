@@ -19,8 +19,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .banner-image {
     width: 26rem;
+  }
+  
+  @media (max-width: 450px) {
+    .banner-image {
+      width: 22rem;
+    }
   }
 </style>

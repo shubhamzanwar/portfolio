@@ -35,4 +35,10 @@ export default {
         border: 1px solid #C3E6CB;
         color: #155724;
     }
+
+    @media (max-width: 450px) {
+        .base {
+            font-size: 1rem;
+        }
+    }
 </style>

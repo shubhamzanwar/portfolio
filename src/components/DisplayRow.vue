@@ -53,4 +53,10 @@ export default {
         }
     }
 
+    @media (max-width: 450px) {
+        .title {
+            font-size: 1.5rem;
+        }
+    }
+
 </style>

@@ -64,13 +64,13 @@ export default {
 
     @media (max-width: 450px) {
         .banner-title {
-            font-size: 2.7rem;
+            font-size: 2.2rem;
         }
 
         .banner-sub-title {
             color: #999;
             font-weight: 500;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
     }
 </style>

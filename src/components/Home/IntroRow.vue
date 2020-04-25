@@ -57,7 +57,7 @@ export default {
 
     .mobile-content {
       flex: 1;
-      font-size: 1.3rem;
+      font-size: 1rem;
       color: #222222;
       font-weight: 400;
       display: none;
@@ -66,6 +66,7 @@ export default {
     @media (max-width: 600px) {
         .intro-row {
             flex-direction: column;
+            margin-top: 2rem;
         }
 
         .mobile-content {
