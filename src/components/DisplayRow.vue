@@ -34,6 +34,7 @@ export default {
 
     .content-wrapper {
         padding: 2rem 0;
+        display: flex;
     }
 
     .view-more {

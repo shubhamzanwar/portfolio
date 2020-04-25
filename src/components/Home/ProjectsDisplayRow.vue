@@ -4,17 +4,30 @@
         viewMoreText="view more cool stuff"
         viewMoreLink="/projects"
     >
-        Projects
+        <project-card
+            v-for="project in projects"
+            :key="project.id"
+            :title="project.name"
+            :description="project.description"
+            :languageColor="project.primaryLanguage.color"
+            :primaryLanguage="project.primaryLanguage.name"
+            :starCount="project.stargazers"
+            :showDetails="true"
+        />
     </display-row>
 </template>
 
 <script>
 import DisplayRow from "../DisplayRow";
+import ProjectCard from "../ProjectCard";
+import projects from '../../constants/projects.json';
 
 export default {
     components: {
-        DisplayRow
-    }
+        DisplayRow,
+        ProjectCard
+    },
+    data: () => ({ projects: projects.slice(0, 3) }),
 }
 </script>
 
