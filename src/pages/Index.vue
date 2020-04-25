@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import HomeBanner from "../components/HomeBanner";
+import HomeBanner from "../components/Home/HomeBanner";
 
 export default {
   metaInfo: {
