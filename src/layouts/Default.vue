@@ -25,11 +25,8 @@
     padding: 0 2rem;
     max-width: 1280px;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
   }
 
   .header {
@@ -42,7 +39,7 @@
   }
 
   .footer {
-    padding-bottom: 3rem;
+    padding: 1rem 0 3rem;
     font-size: 0.8rem;
     color: #999999;
   }
