@@ -27,6 +27,8 @@
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
 
   .header {
