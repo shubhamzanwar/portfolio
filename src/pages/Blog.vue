@@ -3,7 +3,7 @@
         <div class="blog-page">
             <blog-banner />
             <blog-alert />
-            <projects-grid />
+            <blog-grid />
             <divider />
         </div>
     </Layout>
@@ -12,7 +12,7 @@
 <script>
 import BlogBanner from "../components/Blog/BlogBanner";
 import BlogAlert from "../components/Blog/BlogAlert";
-import ProjectsGrid from "../components/Projects/ProjectsGrid";
+import BlogGrid from "../components/Blog/BlogGrid";
 import Divider from "../components/Divider";
 import Projects from '../constants/projects.json';
 
@@ -23,7 +23,7 @@ export default {
     components: {
         BlogBanner,
         BlogAlert,
-        ProjectsGrid,
+        BlogGrid,
         Divider,
     },
     metaInfo: {

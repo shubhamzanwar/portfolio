@@ -1,5 +1,5 @@
 <template>
-    <div class="blog-card">
+    <div class="blog-card" :style="style">
         <a :href="link" target="_blank">
             <div class="image" :style="{backgroundImage: `url(${image})`}"></div>
             <div class="description">
@@ -17,6 +17,10 @@ export default {
         title: String,
         date: String,
         link: String,
+        style: {
+            type: Object,
+            default: {}
+        }
     }
 }
 </script>
