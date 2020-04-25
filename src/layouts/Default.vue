@@ -2,15 +2,13 @@
   <div class="layout">
     <header class="header">
       <strong>
-        <g-link v-show="showBrand" to="/" class="brand-btn">SZ</g-link>
+        <g-link to="/" class="brand-btn">SZ</g-link>
       </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/about">About</g-link>
-        <g-link class="nav__link" to="/projects">Projects</g-link>
-        <g-link class="nav__link" to="/contact">Contact</g-link>
-      </nav>
     </header>
     <slot/>
+    <footer class="footer">
+      © Shubham Zanwar
+    </footer>
   </div>
 </template>
 
@@ -24,8 +22,9 @@
 
   .layout {
     margin: 0 auto;
-    padding: 0 1.25rem;
-    border: 2rem solid black;
+    padding: 0 2rem;
+    max-width: 1280px;
+    width: 100%;
     height: 100vh;
     box-sizing: border-box;
     display: flex;
@@ -39,36 +38,24 @@
     align-items: center;
     margin-bottom: 1.25rem;
     height: 1.75rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
+  }
+
+  .footer {
+    padding-bottom: 3rem;
+    font-size: 0.8rem;
+    color: #999999;
   }
 
   .brand-btn {
     text-decoration: none;
     font-size: 1.75rem;
+    font-weight: normal;
     color: black;
-  }
-
-  .nav__link {
-    text-decoration: none;
-    font-size: 1.25rem;
-    color: black;
-    margin-left: 1.25rem;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .layout {
-      border: none;
-    }
   }
 </style>
 
 <script>
 export default {
-  data: () => ({
-    showBrand: false
-  }),
-  mounted() {
-    this.showBrand = this.$route.fullPath !== "/";
-  }
 }
 </script>
