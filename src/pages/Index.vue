@@ -8,6 +8,8 @@
       <projects-display-row />
       <projects-alert />
       <divider />
+      <blogs-display-row />
+      <divider />
     </div>
   </Layout>
 </template>
@@ -19,6 +21,7 @@ import Divider from "../components/Divider";
 import HomeInfoAlert from "../components/Home/HomeInfoAlert";
 import ProjectsDisplayRow from "../components/Home/ProjectsDisplayRow";
 import ProjectsAlert from "../components/Home/ProjectsAlert";
+import BlogsDisplayRow from "../components/Home/BlogsDisplayRow";
 
 export default {
   metaInfo: {
@@ -31,6 +34,7 @@ export default {
     HomeInfoAlert,
     ProjectsDisplayRow,
     ProjectsAlert,
+    BlogsDisplayRow,
   }
 }
 </script>
