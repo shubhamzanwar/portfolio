@@ -25,4 +25,9 @@ export default {
         border: 1px solid #B8DAFF;
         color: #004085;
     }
+    .warning {
+        background: #FFF3CD;
+        border: 1px solid #FFEEBA;
+        color: #856404;
+    }
 </style>
