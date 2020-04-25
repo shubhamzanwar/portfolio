@@ -30,4 +30,9 @@ export default {
         border: 1px solid #FFEEBA;
         color: #856404;
     }
+    .success {
+        background: #D4EDDA;
+        border: 1px solid #C3E6CB;
+        color: #155724;
+    }
 </style>
