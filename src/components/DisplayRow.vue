@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
     .display-row {
-        margin-top: 2rem;
+        margin: 2rem 0;
     }
 
     .title {
