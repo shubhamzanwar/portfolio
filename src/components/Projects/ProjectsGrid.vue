@@ -10,6 +10,7 @@
             :starCount="project.stargazers"
             :showDetails="true"
             :style="{margin: 0}"
+            :link="project.url"
         />
     </div>
 </template>

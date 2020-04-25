@@ -1,6 +1,8 @@
 <template>
     <div class="project-card" :style="style">
-        <div class="project-title">{{title}}</div>
+        <a :href="link" target="_blank">
+            <div class="project-title">{{title}}</div>
+        </a>
         <div class="content-wrapper">
             <div class="project-description">{{description}}</div>
             <div v-if="showDetails" class="project-details">
@@ -20,6 +22,7 @@ export default {
         starCount: Number,
         primaryLanguage: String,
         languageColor: String,
+        link: String,
         style: {
             type: Object,
             default: {}
@@ -41,6 +44,10 @@ export default {
     .project-card:first-child,
     .project-card:last-child {
         margin: 0
+    }
+
+    a {
+        color: inherit;
     }
 
     .project-title {

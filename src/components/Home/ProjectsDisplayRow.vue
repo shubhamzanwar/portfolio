@@ -13,6 +13,7 @@
             :primaryLanguage="project.primaryLanguage.name"
             :starCount="project.stargazers"
             :showDetails="true"
+            :link="project.url"
         />
     </display-row>
 </template>
