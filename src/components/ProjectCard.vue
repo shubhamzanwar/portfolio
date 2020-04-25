@@ -61,4 +61,10 @@ export default {
         display: flex;
         justify-content: space-between;
     }
+
+    @media (max-width: 600px) {
+        .project-card {
+            margin: 2rem 0;
+        }
+    }
 </style>

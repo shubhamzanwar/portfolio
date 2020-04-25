@@ -47,4 +47,10 @@ export default {
         color: #000;
     }
 
+    @media (max-width: 600px) {
+        .content-wrapper {
+            flex-direction: column;
+        }
+    }
+
 </style>

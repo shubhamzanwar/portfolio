@@ -64,4 +64,10 @@ export default {
         color: #999;
         font-style: italic;
     }
+
+    @media (max-width: 600px) {
+        .blog-card {
+            margin: 2rem 0;
+        }
+    }
 </style>
