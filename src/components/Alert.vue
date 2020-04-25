@@ -35,6 +35,11 @@ export default {
         border: 1px solid #C3E6CB;
         color: #155724;
     }
+    .info {
+        color: #0c5460;
+        background-color: #d1ecf1;
+        border-color: #bee5eb;
+    }
 
     @media (max-width: 450px) {
         .base {
