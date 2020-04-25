@@ -4,7 +4,7 @@
         subTitle="Here is what I’ve been working on"
     >
         <template v-slot:image>
-            <g-image src="~/assets/projects.png" />
+            <g-image src="~/assets/projects.png" class="banner-image" />
         </template>
     </banner>
 </template>
@@ -20,5 +20,7 @@ export default {
 </script>
 
 <style>
-
+  .banner-image {
+    width: 26rem;
+  }
 </style>

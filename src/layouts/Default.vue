@@ -13,6 +13,10 @@
 </template>
 
 <style>
+
+  html {
+    font-size: 16px;
+  }
   body {
     font-family: Roboto,"Helvetica Neue",Arial,sans-serif;
     margin: 0;
@@ -51,6 +55,12 @@
     font-size: 1.75rem;
     font-weight: normal;
     color: black;
+  }
+
+  @media (max-width: 1175px) {
+    html {
+      font-size: 12px;
+    }
   }
 </style>
 

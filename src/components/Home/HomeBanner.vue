@@ -4,7 +4,7 @@
         subTitle="A full stack software development engineer"
     >
         <template v-slot:image>
-            <g-image src="~/assets/home.png" />
+            <g-image src="~/assets/home.png" class="banner-image" />
         </template>
     </banner>
 </template>
@@ -20,5 +20,7 @@ export default {
 </script>
 
 <style>
-
+  .banner-image {
+    width: 26rem;
+  }
 </style>
