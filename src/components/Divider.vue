@@ -10,7 +10,7 @@ export default {
 
 <style scoped>
     .section-divider {
-        margin: 3rem 0;
+        margin: 3rem 0 2rem;
         width: 10rem;
         height: 1px;
         background: #E5E5E5;
