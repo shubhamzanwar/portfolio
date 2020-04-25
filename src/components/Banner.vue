@@ -61,4 +61,16 @@ export default {
             font-size: 1.7rem;
         }
     }
+
+    @media (max-width: 450px) {
+        .banner-title {
+            font-size: 2.7rem;
+        }
+
+        .banner-sub-title {
+            color: #999;
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+    }
 </style>
