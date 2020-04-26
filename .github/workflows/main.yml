@@ -22,7 +22,7 @@ jobs:
     - name: clone repo
       run: |
         yarn
-        node index.js ${{secrets.GITHUB_ACTIONS_TOKEN}} 21
+        node index.js ${{secrets.GITHUB_ACTIONS_TOKEN}} 41
         yarn build
         git clone https://github.com/shubhamzanwar/shubhamzanwar.github.io
         rm -rf ./shubhamzanwar.github.io/*
